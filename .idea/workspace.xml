@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e405b5bf-5490-4eea-b12c-5eb0d8a407b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootcam_Projects_GuesNum_And_LuckyTicket.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guess_number/GuessNum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lucky_ticket/LuckyTicket.java" afterDir="false" />
+    <list default="true" id="e405b5bf-5490-4eea-b12c-5eb0d8a407b3" name="Changes" comment="add HomeTask: LuckyTicket &amp; GuessNum">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lucky_ticket/LuckyTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lucky_ticket/LuckyTicket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +37,7 @@
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.LuckyTicket">
     <configuration name="LuckyTicket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lucky_ticket.LuckyTicket" />
       <module name="Bootcam_Projects_GuesNum_And_LuckyTicket" />
@@ -57,9 +51,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Bootcam_Projects_GuesNum_And_LuckyTicket" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.LuckyTicket" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -72,7 +74,34 @@
       <option name="presentableId" value="Default" />
       <updated>1681412710808</updated>
     </task>
+    <task id="LOCAL-00001" summary="add HomeTask: LuckyTicket &amp; GuessNum">
+      <created>1681451214923</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681451214923</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add HomeTask: LuckyTicket &amp; GuessNum" />
+    <option name="LAST_COMMIT_MESSAGE" value="add HomeTask: LuckyTicket &amp; GuessNum" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>9</line>
+          <properties class="Main" method="decompressRLElist">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Bootcam_Projects_GuesNum_And_LuckyTicket$LuckyTicket.ic" NAME="LuckyTicket Coverage Results" MODIFIED="1681447245573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

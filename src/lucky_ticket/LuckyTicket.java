@@ -8,17 +8,37 @@ public class LuckyTicket {
         System.out.print("Enter you ticket number(6 digits between 000001 and 999999): ");
         String ticketNum = sc.nextLine();
         int sumPresent = 0;
-//        int initial = initialThree(ticketNum);
-//        System.out.println(initial);
+        int temp = 0;
 
-//        int palindrome = palindromeTicket(ticketNum);
-//        System.out.println(palindrome);
+        //1
+        temp = initialThree(ticketNum);
+        if(temp > sumPresent) sumPresent = temp;
+        //2
+        temp = palindromeTicket(ticketNum);
+        if(temp > sumPresent) sumPresent = temp;
+        //3
+        temp = sameFrontandBack(ticketNum);
+        if(temp > sumPresent) sumPresent = temp;
+        //4
+        temp = sameNum(ticketNum);
+        if(temp > sumPresent) sumPresent = temp;
+        //5
+        temp = allSame(ticketNum);
+        if(temp > sumPresent) sumPresent = temp;
+        //6
+        temp = allFive(ticketNum);
+        if(temp > sumPresent) sumPresent = temp;
+        //7
+        temp = allSeven(ticketNum);
+        if(temp > sumPresent) sumPresent = temp;
+        //8
+        temp = allNine(ticketNum);
+        if(temp > sumPresent) sumPresent = temp;
 
-//        int res = sameFrontandBack(ticketNum);
-//        System.out.println(res);
+        if(sumPresent > 0) System.out.println("Your present is: " + sumPresent);
+        else System.out.println("No present available for this ticket number!");
     }
-
-
+    
     // 1
     static int initialThree(String ticketNum){
         int n = ticketNum.length();
@@ -53,9 +73,42 @@ public class LuckyTicket {
     }
 
     // 4
-//    static int sameNum(String ticketNum) {
-//
-//    }
+    static int sameNum(String ticketNum) {
+        int countFront = 1;
+        for(int i = 0; i < ticketNum.length()/2 - 1; i++)
+            if(ticketNum.charAt(i) == ticketNum.charAt(i + 1))
+                countFront++;
+        int countBack = 1;
+        for(int j = ticketNum.length()/2; j < ticketNum.length() - 1; j++)
+            if(ticketNum.charAt(j) == ticketNum.charAt(j + 1))
+                countBack++;
+        return (countBack == countFront && countFront == 3) ? 400_000 : 0;
+    }
 
+    //5
+    static int allSame(String ticketNum) {
+        int count = 0;
+        for(int i = 0; i < ticketNum.length() - 1; i++)
+            if(ticketNum.charAt(i) == ticketNum.charAt(i + 1)) count++;
+        return (count == ticketNum.length() - 1) ? 500_000 : 0;
+    }
+
+    //6
+    static int allFive(String ticketNum) {
+        int ticket = Integer.parseInt(ticketNum);
+        return (ticket/5 == 111_111) ? 500_000 : 0;
+    }
+
+    //7
+    static int allSeven(String ticketNum) {
+        int ticket = Integer.parseInt(ticketNum);
+        return (ticket/7 == 111_111) ? 700_000 : 0;
+    }
+
+    //8
+    static int allNine(String ticketNum) {
+        int ticket = Integer.parseInt(ticketNum);
+        return (ticket/9 == 111_111) ? 1_000_000 : 0;
+    }
 
 }
